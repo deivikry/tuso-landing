@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
   
     },
   },
-  base: "/tuso-landing/",
+  base: mode === 'production' ? './' : '/tuso-landing/',
 }));
